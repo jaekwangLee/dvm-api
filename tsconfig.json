@@ -43,6 +43,7 @@
             "@lib/*": ["src/lib/*"],
             "@utils/*": ["src/utils/*"],
             "@types/*": ["src/types/*"],
+            "@db/*": ["src/db/*"],
         },
     },
     "include": ["src/**/*.ts"],

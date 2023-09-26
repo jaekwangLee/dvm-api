@@ -36,6 +36,7 @@ module.exports = {
       "@constant": path.resolve(__dirname, "src/constants"),
       "@lib": path.resolve(__dirname, "src/libs"),
       "@utils": path.resolve(__dirname, "src/utils"),
+      "@db": path.resolve(__dirname, "src/db"),
     },
   },
   optimization: {
