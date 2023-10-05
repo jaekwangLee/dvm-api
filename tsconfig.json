@@ -4,6 +4,7 @@
         "module": "commonjs", // ES6 모듈 설정
         "lib": ["DOM", "ESNext"],
         "types": ["node"],
+        "typeRoots": ["src/types"],
         "allowJs": false,
         "outDir": "./dist",
         "rootDir": "./src",

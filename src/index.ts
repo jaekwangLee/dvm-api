@@ -1,10 +1,7 @@
 /** @format */
 
-import { dConsole } from "@utils/log";
-import SQLConnector from '@db/connection';
+import AppServer from './app';
 
-console.log("check check your money");
-
-dConsole("check check your money", "hi");
+AppServer.getInstance();
 
 export {};
