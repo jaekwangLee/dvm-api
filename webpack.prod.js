@@ -38,6 +38,9 @@ module.exports = {
       "@utils": path.resolve(__dirname, "src/utils"),
       "@db": path.resolve(__dirname, "src/db"),
       "@types": path.resolve(__dirname, "src/types"),
+      "@models": path.resolve(__dirname, "src/models"),
+      "@routes": path.resolve(__dirname, "src/routes"),
+      "@controllers": path.resolve(__dirname, "src/controllers"),
     },
   },
   optimization: {

@@ -2,7 +2,8 @@ import express, { Express } from 'express';
 import { Connection } from 'mysql';
 import dotenv from 'dotenv';
 
-import SQLConnector from '@db/connection';
+import SQLConnector from '@db/connection'
+import router from '@routes/index';
 
 dotenv.config();
 
@@ -27,11 +28,11 @@ class AppServer implements IAppServer {
   constructor() {
     this.database = new SQLConnector();
     this.app = express();
-    this.app.listen(process.env.SERVER_PORT, this.#listen);
+    this.app.listen(process.env['SERVER_PORT'], this.#listen);
   }
 
   #listen() {
-    console.log(`Server is running on port ${process.env.SERVER_PORT}`);
+    console.log(`Server is running on port ${process.env['SERVER_PORT']}`);
   }
 
   get DB() {
@@ -40,6 +41,10 @@ class AppServer implements IAppServer {
 
   get App() {
     return this.app;
+  }
+
+  setRouter() {
+    this.app.use('/api', router);
   }
 }
 
